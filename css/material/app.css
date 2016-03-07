@@ -294,16 +294,18 @@
 }
 .btn-fab:active,.btn-fab:hover,.btn-fab:focus{outline: none}
 .btn.active.focus, .btn.active:focus, .btn.focus, .btn.focus:active, .btn:active:focus, .btn:focus {outline: none;}
-.board{padding-left: 0px;padding-top: 0px; padding-right: 0;height: 100%;display: inline-block;float: left;}
+.board{padding-left: 0px;padding-top: 0px; padding-right: 0;height: 400px;display: inline-block;float: left;width:55px;}
+.page_wrap{min-height: 88vh;}
 .form-group{margin-top: 5px;}
 .limited {white-space: nowrap;overflow: hidden;width: 150px;text-overflow: ellipsis;}
 .video-row{padding: 5px;padding-top: 15px;border-top: 1px solid rgba(221, 221, 221, 0.59);}
 .navbar{background-color: #FFF;color: #009688;}
-.tutor{height:95vh}
-.canvas{height:95vh;cursor: url("../../icons/ic_create.svg") 2 20,auto;position: unset !important;padding: 0px;
+.canvas{height:400px;cursor: url("../../icons/ic_create.svg") 2 20,auto;position: unset !important;padding: 0px;
 border-bottom: 1px solid rgba(221, 221, 221, 0.59); display: inline-block;float: left;}
 .chatbox{display: inline-block; float: left;padding-left: 15px;padding-right: 15px;}
+.tutor{padding:0px !important;width: 655px;margin: 0 auto;float: none;}
 .board-wrapper{display: inline-block;float: left}
+canvas#drawing{ width: 600px;height: 400px }
 main.well{position: unset;}
 .center-block{float: none}
 .img98{height: 98px;width: 98px;border-radius: 50%}
@@ -325,6 +327,7 @@ input[type="text"], input[type="number"], input[type="email"], input[type="searc
   padding: 8px;
   background-color: #E8F5E9;
   border: 1px solid #DFEBE0;
+  margin-bottom: 5px;
 }
 .dl-chat dd.message:before{
   content: " ";

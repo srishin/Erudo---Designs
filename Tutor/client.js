@@ -23,8 +23,6 @@ window.onload = function() {
     $('body').width($(document).width());
 
   $("main.col-sm-9").width($("main.col-sm-9").width()-1).removeClass('col-sm-9 col-xs-12');
-  $('.board').width($('.board').width()).removeClass('col-sm-1  col-xs-2');
-  $('.canvas').width($('.canvas').width()).removeClass('col-sm-11 col-xs-11');
   $('.chatbox').width($('.chatbox').width()).removeClass('col-sm-3 col-xs-12');
 
    myCanvas.width=600;
