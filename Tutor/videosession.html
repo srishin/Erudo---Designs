@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+  <title>Classroom | Education Center</title>
+      <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link href="../css/material/app.css" rel="stylesheet">
+
+  <!--script src="https://code.jquery.com/jquery-2.1.4.js"></script-->
+  <style type="text/css">
+      canvas#drawing{
+        border:1px solid #EEE;
+        margin-left: auto;
+        margin-right: auto;
+      }
+  </style>
+
+
+
+</head>
+
+<body class="page page  top_panel_style_dark top_panel_opacity_transparent top_panel_show top_panel_over menu_right user_menu_show sidebar_hide">
+
+
+
+   <div class="col-sm-3 center-block chat-box closed">
+    <a href="javascript:void(0)" class="btn btn-primary btn-raised btn-fab chat-btn">
+      <i class="material-icons">chat</i><span class="badge text-danger">1</span>
+    </a>
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <div class="row">
+          <div class="col-sm-6 col-xs-6 text-left"><p class="mb0 p-sm limited">John Doe</p></div>
+          <div class="col-sm-6 col-xs-6 text-right ph-sm">
+            <span class="call-btns">
+              <a href="javascript:void(0)" class="btn btn-xs btn-round ph-sm">
+                <i class="material-icons">call</i>
+              </a>
+              <a href="javascript:void(0)" class="btn btn-xs ph-sm btn-round">
+                <i class="material-icons">videocam</i>
+              </a>
+              <a href="javascript:void(0)" class="btn btn-xs ph-sm btn-round close-chat">
+                <i class="material-icons">clear</i>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="panel-body p0 pt-sm">
+
+        <dl class="dl-chat">
+
+          <dt><img src="http://lorempixel.com/32/32/people/1" class="img-fluid img-circle"></dt>
+          <dd class="message">Quickly come to the meeting room 1B, we have a big server issue
+            <div class="time secondary-text text-right">12 mins. ago</div></dd>
+
+            <dt class="user-pic"><img src="http://lorempixel.com/32/32/people/2" class="img-fluid img-circle"></dt>
+            <dd class="user-message">I’m having breakfast right now, can’t you wait for 10 minutes?
+              <div class="time secondary-text text-right">10 mins. ago</div></dd>
+
+              <dt><img src="http://lorempixel.com/32/32/people/1" class="img-fluid img-circle"></dt>
+              <dd class="message">We are losing money! Quick!
+                <div class="time secondary-text text-right">9 mins. ago</div>
+              </dd>
+
+              <dt><img src="http://lorempixel.com/32/32/people/1" class="img-fluid img-circle"></dt>
+              <dd class="message">Quickly come to the meeting room 1B, we have a big server issue
+                <div class="time secondary-text text-right">12 mins. ago</div></dd>
+
+                <dt class="user-pic"><img src="http://lorempixel.com/32/32/people/2" class="img-fluid img-circle"></dt>
+                <dd class="user-message">I’m having breakfast right now, can’t you wait for 10 minutes?
+                  <div class="time secondary-text text-right">10 mins. ago</div></dd>
+
+                  <dt><img src="http://lorempixel.com/32/32/people/1" class="img-fluid img-circle"></dt>
+                  <dd class="message">We are losing money! Quick!
+                    <div class="time secondary-text text-right">9 mins. ago</div>
+                  </dd>
+
+                </dl>
+                <div class="input-group pl-sm">
+                  <textarea id="addon2" class="form-control"></textarea>
+                  <span class="input-group-btn">
+                    <button type="button" class="btn btn-primary btn-fab btn-fab-mini btn-raised">
+                      <i class="material-icons">send</i>
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End of Chat Window -->
+          <!-- End of Chat Window -->
+
+          <!-- Body -->
+          <div class="body_wrap">
+
+
+
+            <div class="page_wrap">
+
+              <div class="">
+                <div class="page-header ph-lg">
+                  <button id="myBtn" class="pull-right btn-danger"><i class="fa fa-stop"></i> End Session</button>
+                  <h2 id="wb_topic"></h2> 
+                  <small id="wb_course">Math, 10<sup>th</sup> std</small>
+                  <p id="networktrouble" style="float:right;display:none">Network interruptions may delay  or stop audio/video streaming</p>
+                </div>
+
+                <div class="container-fluid">
+                  <!-- Main Section -->
+                  <section class="row">
+                    <main class="col-sm-9 col-xs-12 well pv0 ph-lg board-wrapper">
+                      <div class="row bs-component pl0 pv0 tutor" >
+                        <!-- Edit Menu -->
+                        <div class="col-sm-1  col-xs-1 board">
+                          <nav  class="menu">
+                            <ul>
+                              <li id="btnerase" class="withripple" data-target="ic_open_with" data-toggle="tooltip" data-placement="right" title="Erase"><i class="material-icons">open_with</i>
+                              </li>
+                              <li id="btndraw" class="withripple active" data-target="ic_create" data-toggle="tooltip" data-placement="right" title="Pencil">
+                                <i class="material-icons">create</i>
+                              </li>
+                              <!--li class="withripple" data-target="ic_insert_photo" data-toggle="tooltip" data-placement="right" title="Insert Image">
+                                <i class="material-icons">insert_photo</i>
+                              </li>
+                              <li class="withripple" data-target="ic_insert_chart" data-toggle="tooltip" data-placement="right" title="Insert Chart"><i class="material-icons">insert_chart</i>
+                              </li>
+                              <li class="withripple" data-target="ic_text_fields" data-toggle="tooltip" data-placement="right" title="Insert Text"><i class="material-icons">text_fields</i>
+                              </li> 
+                              <li class="withripple" data-toggle="tooltip" data-placement="right" title="Undo">
+                                <i class="material-icons">undo</i>
+                              </li> 
+                              <li class="withripple" data-toggle="tooltip" data-placement="right" title="Redo">
+                                <i class="material-icons">redo</i>
+                              </li-->
+                              <li id="btnclear"  class="withripple" data-toggle="tooltip" data-placement="right" title="Clear">
+                                <i class="material-icons">clear</i>
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+                        <!-- Canvas -->
+                        <div id="canvasdiv" class="col-sm-11 col-xs-11 canvas" id="p1">
+                          <canvas id="drawing"></canvas>
+                        </div>
+
+
+
+                      </div>
+
+                      <div class="text-center canvas-paginate">
+                        <div class="button-group">
+                          <a href="#p1" class="btn btn-sm btn-primary" data-toggle="tab" aria-expanded="true">1</a>    
+                          <a href="#p2" class="btn btn-sm btn-primary" data-toggle="tab" aria-expanded="false">2</a>
+                          <a href="#p3" class="btn btn-sm btn-primary" data-toggle="tab" aria-expanded="false">3</a>
+                        </div>
+                      </div>
+
+                    </main>
+
+                    <!-- Aside Video -->
+                    <aside class="col-sm-3 col-xs-12 chatbox">
+                      <!-- videobox -->
+                      <div class="videobox">
+                        <div class="panel panel-primary">
+                          <div class="panel-body p0">
+                            <div class="row mv-sm">
+
+                              <div class="embed-responsive embed-responsive-16by9">     
+                                <div class="embed-responsive-item" id="publisherContainer">        
+                        
+                                    </div>    
+                                <!-- <video class="embed-responsive-item"  autoplay>
+                                  <source src="video_bg.mp4" type="video/mp4">
+                                  </video> -->
+                                </div>
+                              </div>
+                              <!-- Video Box -->
+
+                              <article class="row-fluid hidden-xs video-row">
+                                <!-- video -->
+                                <div id="stud0" class="col-sm-6 mb">
+                         
+                        </div>  
+                        
+                        <div id="stud1" class="col-sm-6 mb">
+                         
+                        </div>  
+                       
+                        <div id="stud2" class="col-sm-6 mb">
+                          
+                        </div>  
+                       
+                        <div id="stud3" class="col-sm-6 mb">
+                         
+                        </div>
+
+                       
+                        <div id="stud4" class="col-sm-6 mb">
+                          
+                        </div>
+
+                        
+                        <div id="stud5" class="col-sm-6 mb">
+                          
+                        </div>
+
+                        
+                        <div id="stud6" class="col-sm-6 mb">
+                          
+                        </div>
+
+                        
+                        <div id="stud7" class="col-sm-6 mb">
+                          
+                        </div>
+
+                        
+                        <div id="stud8" class="col-sm-6 mb">
+                          
+                        </div>
+
+                        
+                        <div id="stud9" class="col-sm-6 mb">
+                          
+                        </div>
+                        <div id="stud10" class="col-sm-6 mb">
+                          
+                        </div>
+
+                              </article>
+                            </div>
+                          </div>
+                        </div>
+                      </aside>
+
+                    </section>
+                  </div>
+                </div>
+                <!-- Contacts Footer -->
+
+
+                <!-- /Copyright -->
+              </div>
+            </div>
+
+            <footer class="card text-center pv-lg">
+            <div class="content_wrap">
+            <p>© 2016 All Rights Reserved. <a href="#">Terms of use</a> and <a href="#">Privacy Policy</a></p>
+            </div>
+            </footer>
+            <!-- /Body -->
+
+            <script src="../js/material/jquery-1.11.3.min.js"></script>
+            <script src="../js/material/ripples.min.js"></script>
+            <script src="../js/material/material.min.js"></script>
+            <script src="../js/material/bootstrap-tagsinput.js"></script>  
+            <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+
+              <script src="client.js"> </script>
+               <script src="../js/material/script.js"></script>
+            <!-- Custom Script -->
+
+  
+
+
+          </body>
+
+          </html>

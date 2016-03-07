@@ -36,11 +36,11 @@ $('a.enable-edit').click(function(){
 	$('.form-control:not(.tags),.bootstrap-tagsinput,.tag-help-block,.file-upload').fadeIn('300');
 });
 // Datepicker
-$('#datetimepicker1').datetimepicker({
-	viewMode: 'years',
-	format: 'YYYY',
-	maxDate: new Date()
-});
+// $('#datetimepicker1').datetimepicker({
+// 	viewMode: 'years',
+// 	format: 'YYYY',
+// 	maxDate: new Date()
+// });
 if($('.datetime').length)
  $('.datetime').datetimepicker();
 // Academics
