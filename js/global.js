@@ -157,7 +157,7 @@ jQuery(document).ready(function() {
 jQuery(document).ready(function() {
 	"use strict";
 	THEMEREX_GLOBALS['ppp'] = 6;
-	jQuery(".isotope_filters.isotope-courses-streampage").append('<a href="#" data-filter="*" class="isotope_filters_button active">All</a><a href="#" data-filter=".flt_55" class="isotope_filters_button">Language</a><a href="#" data-filter=".flt_43" class="isotope_filters_button">Marketing</a><a href="#" data-filter=".flt_57" class="isotope_filters_button">Social</a><a href="#" data-filter=".flt_52" class="isotope_filters_button">Medicine</a><a href="#" data-filter=".flt_53" class="isotope_filters_button">Computers</a>');
+	jQuery(".isotope_filters.isotope-courses-streampage").append('<a href="#" data-filter="*" class="isotope_filters_button active">All</a><a href="#" data-filter=".flt_55" class="isotope_filters_button">One To One</a><a href="#" data-filter=".flt_43" class="isotope_filters_button">One To Many</a>');
 });
 
 jQuery(document).ready(function() {
