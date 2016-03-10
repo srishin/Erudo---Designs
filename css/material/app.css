@@ -913,6 +913,12 @@ ul.notification-list li{.list-style: none;}
 .payment-item h4 {white-space: nowrap;overflow: hidden;width:initial;text-overflow: ellipsis;}
 .paid{font-size: 24px;}
 
+/* Course */
+.reviewd-user {display: inline-block;margin-left: 5px;}
+.course-review{margin-bottom: 15px;border-bottom: 2px solid #f3f3f3;}
+article.course-review:last-child {border:none;}
+.sc_team_item .sc_team_item_info{background-color: transparent;}
+.dashboard-list .course-details dt{font-weight: 300}
 /*Cart*/
 .purchase-data h3,.purchase-data h2{display: inline-block;margin-right: 15px;}
     /*Media Queries*/
