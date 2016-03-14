@@ -904,8 +904,10 @@ ul.notification-list li{.list-style: none;}
   }
 }
 /*.body_wrap{display: none}*/
-
-
+.page_content_wrap{min-height: 60vh;}
+.panel.panel-default>.panel-heading, .panel>.panel-heading {
+    background-color: rgba(238, 238, 238, 0.48);
+}
 /*Payment list*/
 .payment-item a:hover,.payment-item a:focus,.payment-item a:visited{text-decoration: none;}
 .payment-item{border:2px solid;border-color:#f3f3f3 transparent;min-height: 50px; height: inherit; margin-bottom: -2px;}
