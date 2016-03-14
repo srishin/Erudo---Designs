@@ -2872,11 +2872,9 @@ figure figcaption,
 
 
 
-#menu_main  li.menu-item.menu-item-has-children:nth-child(1){background-color: #529CCC;}
-#menu_main  li.menu-item.menu-item-has-children:nth-child(2){background-color: #2C982C;}
-#menu_main  li.menu-item.menu-item-has-children:nth-child(3){background-color: #FE0606;}
-#menu_main  li.menu-item.menu-item-has-children:nth-child(4){background-color: #529CCC;}
-#menu_main  li.menu-item.menu-item-has-children:nth-child(5){background-color: #1dbb90;}
+#menu_main  li.menu-item.menu-item-has-children:nth-child(3n+1){background-color: #529CCC;}
+#menu_main  li.menu-item.menu-item-has-children:nth-child(3n+2){background-color: #2C982C;}
+#menu_main  li.menu-item.menu-item-has-children:nth-child(3n){background-color: #FE0606;}
 #menu_main  li.menu-item.menu-item-has-children{border-radius: 4px;}
 
 .page_top_wrap{margin-top:130px;}

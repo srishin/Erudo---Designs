@@ -20,13 +20,16 @@ window.onload = function() {
     // Fill Window Width and Height
 /*    myCanvas.width = window.innerWidth;
   myCanvas.height = window.innerHeight;*/
-    $('body').width($(document).width());
+  $('body').width($(document).width());
 
   $("main.col-sm-9").width($("main.col-sm-9").width()-1).removeClass('col-sm-9 col-xs-12');
   $('.chatbox').width($('.chatbox').width()).removeClass('col-sm-3 col-xs-12');
 
-   myCanvas.width=600;
-   myCanvas.height=400;
+  myCanvas.width=700;
+  $('div.board,div.canvas').height(myCanvas.height=500);
+  $('div.tutor').width(myCanvas.width+55);
+
+
   
   // Set Background Color
     // ctx.fillStyle="#fff";

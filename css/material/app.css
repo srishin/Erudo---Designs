@@ -305,7 +305,7 @@ border-bottom: 1px solid rgba(221, 221, 221, 0.59); display: inline-block;float:
 .chatbox{display: inline-block; float: left;padding-left: 15px;padding-right: 15px;}
 .tutor{padding:0px !important;width: 655px;margin: 0 auto;float: none;}
 .board-wrapper{display: inline-block;float: left}
-canvas#drawing{ width: 600px;height: 400px }
+/*canvas#drawing{ width: 500px;height: 700px }*/
 main.well{position: unset;}
 .center-block{float: none}
 .img98{height: 98px;width: 98px;border-radius: 50%}
@@ -921,6 +921,13 @@ article.course-review:last-child {border:none;}
 .dashboard-list .course-details dt{font-weight: 300}
 /*Cart*/
 .purchase-data h3,.purchase-data h2{display: inline-block;margin-right: 15px;}
+
+/*Admin*/
+.table>tbody>tr>td{vertical-align:middle;}
+td,th{text-align: center;}
+td:nth-child(1){text-align: left;}
+.form-control-feedback.search{pointer-events: all;}
+.syllabus .fa{font-size: 18px;padding: 0px 15px;}
     /*Media Queries*/
 
     @media(max-width: 480px){
